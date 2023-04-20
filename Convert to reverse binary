@@ -1,0 +1,20 @@
+import java.util.Scanner; 
+
+public class LabProgram {
+   public static void main(String[] args) {
+     
+ Scanner scanner = new Scanner(System.in);
+
+       // System.out.print("Enter a positive integer: ");
+        int x = scanner.nextInt();
+
+        String binary = "";
+
+        while (x > 0) {
+            binary += Integer.toString(x % 2);
+            x /= 2;
+        }
+
+        System.out.println(binary);
+      }
+}
