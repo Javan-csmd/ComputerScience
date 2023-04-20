@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   public static void main(String[] args) {
+     int userNum, divNum;//defining integer variable
+
+    Scanner scnr = new Scanner(System.in);
+
+     userNum = scnr.nextInt();
+     divNum = scnr.nextInt();
+
+     if (divNum != 0) {
+         System.out.print( userNum / divNum + " ");
+         System.out.print(+ userNum / divNum / divNum + " ");
+         System.out.print("" + userNum / divNum / divNum / divNum + "\n");
+     } else {
+         System.out.println("Cannot divide by zero!");
+     }
+   }
+}
